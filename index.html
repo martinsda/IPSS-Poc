@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First Admin</title>
+        <link rel="stylesheet" href="node_modules/ng-admin/build/ng-admin.min.css">
+    </head>
+    <body ng-app="myApp">
+        <div ui-view="ng-admin"></div>
+        <script src="node_modules/ng-admin/build/ng-admin.min.js" type="text/javascript"></script>
+        <script src="admin.js" type="text/javascript"></script>
+        <meta name="google-signin-client_id" content="1074739153615-epibvbneechecbee39ib2htt82epgg9e.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script type="text/javascript">
+            var username = window.localStorage.getItem('myadmin_login');
+            if (!username) {
+                window.location.href = "login.html";
+            }
+
+            if(!gapi.auth2){
+                gapi.load('auth2', function() {
+                        gapi.auth2.init();
+                    });
+
+                    
+            }
+
+            function logout() {
+
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function () {
+                console.log('User signed out.');
+                });
+                window.localStorage.removeItem('myadmin_login');
+                window.location.href = "login.html";
+            }
+            </script>
+    </body>
+</html>
