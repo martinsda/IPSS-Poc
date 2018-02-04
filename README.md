@@ -1,9 +1,13 @@
 # IPSS-Poc
 
-One Paragraph of project description goes here
+Initial project is based on [ng-admin](https://github.com/marmelab/ng-admin)
 
+See the [Getting Started](https://ng-admin-book.marmelab.com/doc/Getting-started.html) dedicated chapter for a step-by-step tutorial aimed at beginners.
 
 ## Getting Started
+
+Customizations were done over initial  **ng-admin**, this includes:
+ * Custom Authentification 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -12,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+https://developers.google.com/identity/sign-in/web/sign-in
 ```
 
 ### Installing
