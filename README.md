@@ -19,12 +19,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Google API Console project and client ID
+* Google API Console project and client ID.
+
 See [Integrating Google Sign-In into your web app](https://developers.google.com/identity/sign-in/web/sign-in)
 
 Specify the client ID you created for your app in the Google Developers Console with the google-signin-client_id meta element.
 
-In  login.html and index.hml:
+In  login.html and index.hml replace meta name "google-signin-client_id":
 ```
 
 <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
