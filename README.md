@@ -4,6 +4,8 @@ Initial project is based on [ng-admin](https://github.com/marmelab/ng-admin)
 
 See the [Getting Started](https://ng-admin-book.marmelab.com/doc/Getting-started.html) dedicated chapter for a step-by-step tutorial aimed at beginners.
 
+See full documentation [here](https://ng-admin-book.marmelab.com/).
+
 ## Getting Started
 
 Customizations were done over initial  **ng-admin**, this includes:
@@ -11,12 +13,21 @@ Customizations were done over initial  **ng-admin**, this includes:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+## Nexsteps
+
+* Add roles
+
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* Google API Console project and client ID
+See [Integrating Google Sign-In into your web app](https://developers.google.com/identity/sign-in/web/sign-in)
 
+Specify the client ID you created for your app in the Google Developers Console with the google-signin-client_id meta element.
+
+In  login.html and index.hml:
 ```
-https://developers.google.com/identity/sign-in/web/sign-in
+
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 ```
 
 ### Installing
@@ -63,23 +74,17 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Angular](https://angular.io/) - The web framework used
+* [Ng-admin](http://ng-admin-book.marmelab.com) - AngularJS admin GUI to any RESTful API
+* [Visual Studio Code](https://code.visualstudio.com) - IDE - Text Editor
+* [Github](https://github.com/) - Code repository / Version Control
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Martins** - *Initial work* - [MartinsDa](https://github.com/martinsda)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/martinsda/IPSS-Poc/graphs/contributors) who participated in this project.
 
 ## License
 
